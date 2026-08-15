@@ -100,6 +100,6 @@ Please do not use the **SudurSoft Solutions** name, branding, logo, or project c
 
 ---
 
-**SudurSoft Solutions — Building Solutions, Empowering Futures**
+**SudurSoft Solutions - Building Solutions, Empowering Futures**
 
 *Made as a learning and portfolio project from Dhangadhi, Nepal.*
