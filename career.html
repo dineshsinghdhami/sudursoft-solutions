@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Careers at SudurSoft Solutions | Jobs & Internships in Dhangadhi</title>
+<meta name="description" content="Explore jobs and internship opportunities at SudurSoft Solutions in Dhangadhi, Nepal. Build practical skills, work on real projects, and grow your IT career with us.">
+<meta name="author" content="SudurSoft Solutions">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://sudursoft.tech/career.html">
+<link rel="icon" type="image/png" href="media/sudursoft-logo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SudurSoft Solutions">
+<meta property="og:title" content="Careers at SudurSoft Solutions | Jobs & Internships">
+<meta property="og:description" content="Explore jobs and internship opportunities at SudurSoft Solutions in Dhangadhi, Nepal.">
+<meta property="og:image" content="https://sudursoft.tech/media/sudursoft-logo.png">
+<meta property="og:url" content="https://sudursoft.tech/career.html">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #000000;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --bg-card-hover: rgba(255, 255, 255, 0.06);
+    --text: #ffffff;
+    --muted: #94a3b8;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.22);
+    --accent: #3b82f6;
+    --accent-2: #60a5fa;
+    --accent-dim: rgba(59, 130, 246, 0.12);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 22px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .container { width: min(1180px, 92%); margin: 0 auto; }
+
+  .grid-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 38px 38px;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .navbar { height: 76px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; font-weight: 800; letter-spacing: -0.5px; }
+  .logo img { height: 30px; width: auto; }
+  .logo span.dim { color: var(--muted); font-weight: 500; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; font-size: 0.85rem; font-weight: 500; }
+  .nav-links a:not(.btn) { opacity: 0.65; transition: opacity 0.2s ease; }
+  .nav-links a:not(.btn):hover, .nav-links a.active { opacity: 1; color: #fff; }
+  .nav-links a.active { position: relative; }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -9px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--accent-2);
+  }
+  .menu-btn { display: none; font-size: 26px; cursor: pointer; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.65rem 1.35rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .btn-solid { background: #fff; color: #000; border-color: #fff; }
+  .btn-solid:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: #fff; border-color: rgba(255,255,255,0.2); }
+  .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.05); transform: translateY(-1px); }
+
+  .career-hero {
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: radial-gradient(ellipse 65% 60% at 50% 20%, var(--accent-dim), transparent 70%);
+    padding: 5.5rem 0;
+  }
+  .career-hero .container { max-width: 900px; }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 1.75rem;
+  }
+  .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+  .career-hero img { height: 58px; width: auto; margin-bottom: 1.5rem; filter: drop-shadow(0 0 30px rgba(59,130,246,0.35)); }
+  h1 { font-size: clamp(2.7rem, 6vw, 4.7rem); line-height: 1.05; letter-spacing: -3px; font-weight: 900; margin-bottom: 1.4rem; }
+  h1 .accent { color: var(--accent-2); }
+  .career-hero .sub { max-width: 700px; margin: 0 auto 2rem; color: var(--muted); font-size: 1.08rem; }
+  .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+  section { padding: 6rem 0; border-bottom: 1px solid var(--border); }
+  .section-head { max-width: 720px; margin-bottom: 3rem; }
+  .section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--accent-2); letter-spacing: 0.5px; margin-bottom: 14px; display: block; }
+  .eyebrow::before { content: '// '; color: var(--muted); }
+  .section-head h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); letter-spacing: -1.2px; margin-bottom: 14px; }
+  .section-head p { color: var(--muted); font-size: 1.02rem; }
+
+  .jobs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .job-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: 0.25s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .job-card:hover { border-color: var(--border-hover); background: var(--bg-card-hover); transform: translateY(-4px); }
+  .job-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+  .job-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: var(--radius-md); background: var(--accent-dim); color: var(--accent-2); font-size: 20px; flex: 0 0 auto; }
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid rgba(59,130,246,0.28);
+    background: rgba(59,130,246,0.08);
+    color: var(--accent-2);
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+  }
+  .status::before { content: ''; width: 6px; height: 6px; background: var(--accent-2); border-radius: 50%; box-shadow: 0 0 8px var(--accent); }
+  .job-card h3 { font-size: 1.25rem; letter-spacing: -0.4px; margin-bottom: 8px; }
+  .job-card > p { color: var(--muted); font-size: 0.93rem; margin-bottom: 1.4rem; }
+  .job-meta { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 1.55rem; }
+  .job-meta span { padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); }
+  .job-actions { margin-top: auto; padding-top: 1.2rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .job-actions small { color: #64748b; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; }
+
+  .internship-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .intern-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.85rem; transition: .25s ease; }
+  .intern-card:hover { border-color: var(--border-hover); background: var(--bg-card-hover); transform: translateY(-4px); }
+  .intern-card .num { font-family: 'JetBrains Mono', monospace; color: var(--accent-2); font-size: .8rem; border: 1px solid var(--border); border-radius: var(--radius-sm); width: 34px; height: 34px; display: grid; place-items: center; margin-bottom: 1.2rem; }
+  .intern-card h3 { font-size: 1.12rem; margin-bottom: 8px; }
+  .intern-card p { color: var(--muted); font-size: .92rem; margin-bottom: 1.2rem; }
+  .intern-card .mini-meta { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: .73rem; margin-bottom: 1.35rem; }
+
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .why-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.8rem; }
+  .why-card i { color: var(--accent-2); font-size: 22px; margin-bottom: 1rem; }
+  .why-card h3 { font-size: 1.05rem; margin-bottom: 7px; }
+  .why-card p { color: var(--muted); font-size: .9rem; }
+
+  .apply-box { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 3.25rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .apply-box h2 { font-size: 2rem; letter-spacing: -1px; margin-bottom: 10px; }
+  .apply-box p { color: var(--muted); max-width: 620px; }
+
+  footer { padding: 3.5rem 0 1.5rem; border-top: 1px solid var(--border); }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+  footer h3, footer h4 { margin-bottom: 14px; }
+  footer h4 { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  footer p, footer a, footer li { color: var(--muted); list-style: none; margin-bottom: 8px; font-size: 0.92rem; }
+  footer a:hover { color: #fff; }
+  .copyright { border-top: 1px solid var(--border); padding-top: 1.5rem; text-align: center; color: #5f6b7d; font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; }
+
+  @media (max-width: 900px) {
+    .menu-btn { display: block; }
+    .nav-links {
+      position: absolute; top: 76px; left: 0; width: 100%;
+      background: rgba(0,0,0,0.97); flex-direction: column; align-items: flex-start;
+      padding: 22px 6%; gap: 1.1rem; border-bottom: 1px solid var(--border); display: none;
+    }
+    .nav-links.active { display: flex; }
+    .nav-links a.active::after { display: none; }
+    .jobs-grid, .internship-grid, .why-grid, .footer-grid { grid-template-columns: 1fr; }
+    .apply-box { flex-direction: column; align-items: flex-start; padding: 2.25rem; }
+    .career-hero { min-height: auto; padding: 4.5rem 0; }
+  }
+
+  @media (max-width: 560px) {
+    h1 { letter-spacing: -2px; }
+    section { padding: 4.5rem 0; }
+    .job-actions { align-items: flex-start; flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="grid-overlay"></div>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html#home" class="logo"><img src="media/sudursoft-logo.png" alt="SudurSoft"> SudurSoft<span class="dim"> Solutions</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#products">Products</a>
+      <a href="career.html" class="active">Career</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-solid">Contact Us</a>
+    </nav>
+
+    <div class="menu-btn" id="menuBtn">☰</div>
+  </div>
+</header>
+
+<main>
+  <section class="career-hero" style="border-top:0;">
+    <div class="container">
+      <div class="hero-badge"><span class="dot"></span> Careers at SudurSoft Solutions</div>
+      <img src="media/sudursoft-logo.png" alt="SudurSoft Solutions logo">
+      <h1>Build Your Career.<br><span class="accent">Create Real Impact.</span></h1>
+      <p class="sub">Join a growing software and IT team in Dhangadhi. Work on practical projects, build your skills, and grow with SudurSoft Solutions.</p>
+      <div class="hero-actions">
+        <a href="#jobs" class="btn btn-solid">View Job Openings</a>
+        <a href="#internships" class="btn btn-outline">Explore Internships</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOB OPENINGS: Edit, add, or remove cards in this section when hiring needs change. -->
+  <section id="jobs">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Job Openings</span>
+        <h2>Current Opportunities</h2>
+        <p>Explore roles where you can contribute to real software projects and grow with our team.</p>
+      </div>
+
+      <div class="jobs-grid">
+        <article class="job-card">
+          <div class="job-top">
+            <div class="job-icon"><i class="fas fa-code"></i></div>
+            <span class="status">Open</span>
+          </div>
+          <h3>Junior Web Developer</h3>
+          <p>Work on responsive websites and web applications while collaborating on practical client and internal projects.</p>
+          <div class="job-meta">
+            <span><i class="fas fa-briefcase"></i> Full-time</span>
+            <span><i class="fas fa-location-dot"></i> Dhangadhi</span>
+            <span><i class="fas fa-layer-group"></i> Junior</span>
+          </div>
+          <div class="job-actions">
+            <small>HTML · CSS · JavaScript</small>
+            <a href="mailto:support@sudursoft.tech?subject=Application%20-%20Junior%20Web%20Developer" class="btn btn-solid">Apply Now</a>
+          </div>
+        </article>
+
+        <article class="job-card">
+          <div class="job-top">
+            <div class="job-icon"><i class="fas fa-pen-ruler"></i></div>
+            <span class="status">Open</span>
+          </div>
+          <h3>UI / UX Designer</h3>
+          <p>Design clean, user-focused interfaces and help turn ideas into modern digital experiences for web and software products.</p>
+          <div class="job-meta">
+            <span><i class="fas fa-briefcase"></i> Full-time</span>
+            <span><i class="fas fa-location-dot"></i> Dhangadhi</span>
+            <span><i class="fas fa-layer-group"></i> Junior</span>
+          </div>
+          <div class="job-actions">
+            <small>Figma · UI Design · UX</small>
+            <a href="mailto:support@sudursoft.tech?subject=Application%20-%20UI%20UX%20Designer" class="btn btn-solid">Apply Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS: Edit these cards to match the internship programs you are currently accepting. -->
+  <section id="internships">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Internships</span>
+        <h2>Start Your IT Journey With Us</h2>
+        <p>Build practical skills through project-based learning, guidance, and real development experience.</p>
+      </div>
+
+      <div class="internship-grid">
+        <article class="intern-card">
+          <div class="num">01</div>
+          <h3>Web Development Internship</h3>
+          <p>Learn and practice frontend and web development while contributing to real project work.</p>
+          <div class="mini-meta">3 Months · Beginner · Dhangadhi</div>
+          <a href="mailto:support@sudursoft.tech?subject=Application%20-%20Web%20Development%20Internship" class="btn btn-outline">Apply for Internship</a>
+        </article>
+
+        <article class="intern-card">
+          <div class="num">02</div>
+          <h3>Data Analysis Internship</h3>
+          <p>Gain practical experience with data handling, analysis, visualization, and reporting fundamentals.</p>
+          <div class="mini-meta">3 Months · Beginner · Dhangadhi</div>
+          <a href="mailto:support@sudursoft.tech?subject=Application%20-%20Data%20Analysis%20Internship" class="btn btn-outline">Apply for Internship</a>
+        </article>
+
+        <article class="intern-card">
+          <div class="num">03</div>
+          <h3>Software / IT Internship</h3>
+          <p>Get broad exposure to software projects, development workflows, testing, and practical IT problem-solving.</p>
+          <div class="mini-meta">3 Months · Beginner · Dhangadhi</div>
+          <a href="mailto:support@sudursoft.tech?subject=Application%20-%20Software%20IT%20Internship" class="btn btn-outline">Apply for Internship</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Why SudurSoft</span>
+        <h2>Learn, Build and Grow</h2>
+        <p>We focus on practical experience, collaboration, and continuous learning.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><i class="fas fa-laptop-code"></i><h3>Real Project Experience</h3><p>Work around practical software and digital projects instead of learning only through theory.</p></div>
+        <div class="why-card"><i class="fas fa-people-group"></i><h3>Supportive Team</h3><p>Learn through collaboration, feedback, and guidance while developing professional work habits.</p></div>
+        <div class="why-card"><i class="fas fa-arrow-trend-up"></i><h3>Growth Focus</h3><p>Strengthen technical skills, communication, problem-solving, and confidence for your IT career.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply">
+    <div class="container">
+      <div class="apply-box">
+        <div>
+          <h2>Don't see the right opening?</h2>
+          <p>Send your CV and a short introduction. We can keep your profile in mind for suitable future opportunities at SudurSoft Solutions.</p>
+        </div>
+        <a href="mailto:support@sudursoft.tech?subject=Career%20Application%20-%20SudurSoft%20Solutions" class="btn btn-solid"><i class="fas fa-paper-plane"></i> Send Your CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>SudurSoft Solutions</h3>
+        <p>Building Solutions, Empowering Futures. We provide software development, IT solutions, data analysis, internship, and training.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#courses">Courses</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <p>support@sudursoft.tech</p>
+        <p>9866109958</p>
+        <p>Dhangadhi, Nepal</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 SudurSoft Solutions. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+  menuBtn.addEventListener("click", () => navLinks.classList.toggle("active"));
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("active"));
+  });
+</script>
+</body>
+</html>
